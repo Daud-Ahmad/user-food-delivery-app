@@ -21,7 +21,6 @@ void main() async {
   FirebaseMessaging messaging = FirebaseMessaging.instance;
   messaging.getToken().then((value){
     AppConfig.token = value;
-    print('=========================$value');
   });
 
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);

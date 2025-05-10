@@ -21,8 +21,6 @@ class SplashViewModel extends BaseViewModel {
       final token = await Preferences.getKey(Preferences.kToken);
       final userId = await Preferences.getKey(Preferences.kUserId);
       final isUserAsGuest = await Preferences.getKey(Preferences.kIsUserAsGuest);
-      print('==========================================$token================');
-      print('==========================================$userId================');
 
       if ((token == null || token.isEmpty) && (isUserAsGuest == null || isUserAsGuest.isEmpty)) {
         Navigator.pushReplacementNamed(context, '/login_screen');

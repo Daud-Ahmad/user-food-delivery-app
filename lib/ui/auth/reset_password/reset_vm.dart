@@ -149,9 +149,6 @@ class ResetPasswordViewModel extends BaseViewModel {
       return;
     }
 
-    print('================$otpFromUser');
-    print('================$otp');
-
     if(otpFromUser == otp.toString()){
       isShowOtpView = false;
       isShowForgetPasswordView = true;

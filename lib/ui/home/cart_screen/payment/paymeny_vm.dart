@@ -103,11 +103,6 @@ class PaymentViewModel extends BaseViewModel {
     final req = await makePayWithStripeRequest(userId: userId!, preperId: preperId,
         amount: AppConfig.total.toString(), currency: AppConfig.PAYMENT_TYPE, cardId: cartId);
 
-    // print('=======================${AppConfig.total.toString()}');
-    // print('=======================cartId $cartId');
-    // print('=======================preperId $preperId');
-    // print('=======================userId $userId');
-
     final resp = await SystemApiService.payWithStripe(req);
     if (resp.isSuccess) {
       PayStripeResp payStripeResp = resp.data!;
@@ -130,13 +125,6 @@ class PaymentViewModel extends BaseViewModel {
         itemList: orderItemList, startTime: AppConfig.menuResponseList[0].resTiming!.startTime,
     endTime: AppConfig.menuResponseList[0].resTiming!.endTime, tax: getTaxAmount().toString(),
         transactionId: transactionId);
-    // print('================userid : $userId\n'
-    //     'prepeersId : $preperId\n'
-    //     'addressId : ${AppConfig.addressId.toString()}\n'
-    //     'method : ${AppConfig.deliveryMethod}\n'
-    //     'transactionId : $transactionId\n'
-    //     '${orderItemList[0].id}'
-    //     '========');
     final resp = await SystemApiService.placeOrder(req);
     if (resp.isSuccess) {
       hideProgress(context);

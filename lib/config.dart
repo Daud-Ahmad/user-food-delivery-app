@@ -4,7 +4,7 @@ import 'models/menu_response.dart';
 
 abstract class AppConfig {
   static String imageBaseUrl = 'https://muraadmin.com/';
-  static String googleMapApiKey = 'AIzaSyDVmnIeRxwN6mUtnvF51sMHwY1PZIwKTx8';
+  static String googleMapApiKey = 'YOUR_API_KEY';
 
   static List<MenuResponse> menuResponseList = [];
   static List<AddressListResponse> addressList = [];

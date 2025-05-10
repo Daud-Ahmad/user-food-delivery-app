@@ -55,7 +55,6 @@ class ContactUsViewModel extends BaseViewModel {
 
   onContactUs(BuildContext context) async {
     final userId = await Preferences.getKey(Preferences.kUserId);
-    print('==================onContactUs$screenShortImageLink');
     final req = await makeContactUsRequest(userId: userId!, message: problemDesc!, image: screenShortImageLink);
     final resp = await SystemApiService.contactUs(req);
     if (resp.isSuccess) {
@@ -102,8 +101,6 @@ class ContactUsViewModel extends BaseViewModel {
     final resp = await SystemApiService.imageUpload(req, 'messages');
     if (resp.isSuccess) {
       screenShortImageLink = resp.image;
-      print('==================resp.image${resp.image}');
-      print('==================uploadImage$screenShortImageLink');
       onContactUs(context);
     } else {
       hideProgress(context);
