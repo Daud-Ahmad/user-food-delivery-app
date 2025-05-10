@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "248048122906",
+    "project_id": "mura-1b540",
+    "storage_bucket": "mura-1b540.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248048122906:android:60c6b12f1f548a3d15e5a3",
+        "android_client_info": {
+          "package_name": "com.muraappltd.murauser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248048122906-p70dvbqpd317i2qbur5lgq3p90ekliis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muraappltd.murauser",
+            "certificate_hash": "b60d2568606658916995a9c4fe37d6d639e9a54e"
+          }
+        },
+        {
+          "client_id": "248048122906-b1ni176db2ekhv375fl5d9jnko9a2stq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgZZ2V4dLzHSGXwNSu2fayUavvaLP-p0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248048122906-b1ni176db2ekhv375fl5d9jnko9a2stq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
